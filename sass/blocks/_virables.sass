@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+	
+$redButton: #fb5859
+$blueColor: #5266df
+$grayish: #9194a1
+$titleColor: #252b46
+
+@mixin flexCenter
+	display: flex
+	justify-content: center
+	align-items: center
+
+@mixin flexSpaceBetween
+	display: flex
+	align-items: center
+	justify-content: space-between
+
+@mixin flexSA
+	display: flex
+	justify-content: space-around
+	align-items: center
+
+@mixin buttonBlue
+	border: none
+	border-radius: 5px
+	font-size: 18px
+	color: #ffffff
+	background-color: $blueColor
+	cursor: pointer
+	transition: 0.5s ease-in-out
+	
+@mixin buttonHoverBlue
+	color: $blueColor
+	border: 1px solid $blueColor
+	background-color: #ffffff
+
+@mixin title
+	font-size: 30px
+	font-weight: 500
+	color: $titleColor
+	text-align: center
+	
+
+@mixin descr
+	color: $grayish
+	font-size: 18px
+	text-align: center
+*
+	padding: 0
+	margin: 0
+	box-sizing: border-box
+body
+	font-family: 'Rubik', sans-serif;
+	font-size: 18px
+	font-weight: 400
+img
+	width: 100%
+.container
+	width: 90%
+	max-width: 1140px
+	margin: 0 auto

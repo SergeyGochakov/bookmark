@@ -1,0 +1,69 @@
+.modal-bg
+	position: fixed
+	top: 0
+	left: 0
+	background-color: rgba(0, 0, 0, 0.5)
+	width: 100%
+	height: 100vh
+	+flexCenter
+	visibility: hidden
+	opacity: 0
+	transition: 0.5s ease-in-out
+	z-index: 3
+
+.modal-bg-active
+	visibility: visible
+	opacity: 1
+
+.modal
+	position: relative
+	background-color: #ffffff
+	height: 400px
+	width: 400px
+	border-radius: 10px
+	padding: 50px 20px 0
+	display: fle
+	flex-direction: column
+	&_title
+		text-align: center
+		font-size: 40px
+		color: $blueColor
+		text-transform: uppercase
+		font-weight: 400
+	&_input
+		margin-top: 30px
+		text-align: center
+		input
+			height: 40px
+			width: 300px
+			border-radius: 10px
+			padding: 0 30px 0 10px
+			border: 1px solid $blueColor
+	&_login
+		display: block
+		margin: 0 auto
+		margin-top: 40px
+		height: 50px
+		width: 200px
+		border-radius: 10px
+		border: none
+		background-color: $blueColor
+		color: #ffffff
+		font-size: 18px
+		text-transform: uppercase
+		cursor: pointer
+		transition: 0.5s ease-in-out
+		&:hover
+			background-color: #ffffff
+			color: $blueColor
+			border: 1px solid $blueColor
+	&_close
+		position: absolute
+		top: 10px
+		right: 10px
+		cursor: pointer
+
+@media screen and ( max-width: 575px )
+	.modal
+		height: 350px
+		width: 350px

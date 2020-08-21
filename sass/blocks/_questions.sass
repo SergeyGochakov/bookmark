@@ -1,0 +1,57 @@
+.questions
+	padding: 160px 0
+	&_heading
+		max-width: 500px
+		margin: 0 auto
+		h3
+			+title
+		p
+			margin-top: 40px
+			+descr
+	&_container
+		margin-top: 60px
+		+flexCenter
+		flex-direction: column
+	&_items
+		width: 550px
+		cursor: pointer
+		&_wrapper
+			+flexSpaceBetween
+			padding: 20px 0
+			border-bottom: 2px solid rgba(178, 190, 195,0.5)
+			border-top: 2px solid rgba(178, 190, 195,0.5)
+
+		&_header
+			font-weight: 300
+			transition: all 0.65s
+			&:hover
+				color: $redButton
+		&_icon
+			width: 20px
+			img
+				transition: all 0.65s
+				&:hover
+					transform: rotate(180deg)
+		&_answer
+			width: 100%
+			color: $grayish
+			margin: 20px 0
+			line-height: 30px
+	&_btn
+		display: block
+		margin: 0 auto
+		margin-top: 50px
+		width: 120px
+		height: 45px
+		+buttonBlue
+		&:hover
+			+buttonHoverBlue
+		.show
+			display: block
+		.hide
+			display: none
+
+@media screen and (max-width: 575px)
+	.questions
+		&_items
+			width: 90%

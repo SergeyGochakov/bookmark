@@ -1,0 +1,116 @@
+.bookmark
+	position: relative
+	// max-height: 650px
+	padding-top: 105px
+	&_wrapper
+		position: relative
+		+flexSpaceBetween
+		z-index: 2
+	&_items
+		max-height: 300px
+		width: 500px
+		&-title
+			font-size: 34px
+			font-weight: 500
+			color: $titleColor
+		&-descr
+			margin-top: 30px
+			color: $grayish
+			line-height: 25px
+		&-btn
+			margin-top: 30px
+		&-blue
+			margin-right: 15px
+			height: 50px
+			width: 155px
+			+buttonBlue
+			&:hover
+				+buttonHoverBlue
+		&-white
+			height: 50px
+			width: 155px
+			color: $grayish
+			border: none
+			border-radius: 5px
+			background-color: #ffffff
+			box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2)
+			cursor: pointer
+			transition: 0.5s ease-in-out
+			&:hover
+				border: 1px solid $grayish
+		
+@media screen and ( max-width:1024px	)
+
+	.bookmark
+		&_img
+			img
+				width: 100%
+
+@media screen and ( max-width:991px	)
+
+	.bookmark
+		&_items
+			&-title
+				font-size: 30px
+			&-descr
+				font-size: 17px
+			&-blue
+				height: 45px
+				width: 130px
+				font-size: 15px
+			&-white
+				height: 45px
+				width: 130px
+				font-size: 15px
+
+@media screen and ( max-width:767px	)
+
+	.bookmark
+		padding-top: 80px
+		&_wrapper
+			align-items: start
+		&_items
+			&-title
+				font-size: 22px
+			&-descr
+				font-size: 13px
+			&-blue
+				height: 45px
+				width: 100px
+				font-size: 12px
+			&-white
+				height: 45px
+				width: 100px
+				font-size: 12px
+		
+@media screen and ( max-width:575px )
+
+	.bookmark
+		&_wrapper
+			flex-wrap: wrap-reverse
+		&_items
+			margin-top: 55px
+			text-align: center
+			&-title
+				font-size: 30px
+			&-descr
+				padding: 0 34px
+				font-size: 16px
+			&-blue
+				height: 50px
+				width: 150px
+				font-size: 14px
+			&-white
+				height: 50px
+				width: 150px
+				font-size: 14px
+
+@media screen and ( max-width:375px )
+	.bookmark
+		margin-bottom: 80px
+		&_items
+			&-btn
+			margin-top: 0
+			&-blue
+				margin-right: 0
+				margin-bottom: 10px

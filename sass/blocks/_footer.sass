@@ -1,0 +1,37 @@
+.footer
+	padding: 30px 0
+	background-color: #130f40
+	&_wrapper
+		+flexSpaceBetween
+	&_items
+		+flexCenter
+	&_links
+		margin-left: 65px
+		+flexCenter
+		list-style: none
+		li
+			margin: 0 20px
+			color: #eee
+			cursor: pointer
+			transition: 0.65s ease-in-out
+			&:hover
+				color: $redButton
+	&_icons
+		+flexCenter
+		img
+			margin: 0 20px
+			cursor: pointer
+@media screen and ( max-width: 575px )
+	.footer
+		&_wrapper
+			flex-direction: column
+		&_items
+			flex-direction: column
+		&_links
+			margin-left: 0
+			margin-top: 20px
+			flex-direction: column
+			li
+				margin: 20px 0
+		&_icons
+			margin-top: 30px

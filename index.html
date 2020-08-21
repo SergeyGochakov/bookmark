@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<title>Bookmark landing page</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="header">
+				<div class="header_logo">
+					<img src="images/logo-bookmark.svg" alt="logo">
+				</div>
+				<span class="hamburger hamburger_menu">
+					<img src="images/icon-hamburger.svg" alt="">
+				</span>
+
+				<div class="header_nav header_nav-active">
+					<span>
+						<img src="images/logo_white.png" alt="#" class="hamburger hamburger_logowhite">
+					</span>
+					<span class="hamburger hamburger_close">
+						<img src="images/icon-close.svg" alt="">
+					</span>
+					<nav>
+						<ul class="header_menu">
+							<span class="hamburger-top"></span>
+							<li class="header_menu-item">
+								Features
+							</li>
+							<span class="hamburger-bottom"></span>
+							<li class="header_menu-item">
+								Pricing
+							</li>
+							<span class="hamburger-bottom"></span>
+							<li class="header_menu-item">
+								Contact
+							</li>
+							<span class="hamburger-bottom"></span>
+						</ul>
+					</nav>
+					<button class="header_login">
+						Login
+					</button>
+					<ul class="hamburger hamburger_icons">
+						<li><a href="#">
+								<img src="images/icon-facebook.svg" alt="facebook">
+							</a></li>
+						<li><a href="#">
+								<img src="images/icon-twitter.svg" alt="twitter">
+							</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="modal-bg">
+		<div class="modal">
+			<h2 class="modal_title">Login</h2>
+			<div class="modal_input">
+				<label for="email"></label>
+				<input required type="email" name="email" placeholder="email">
+			</div>
+			<div class="modal_input">
+				<label for="password"></label>
+				<input required type="password" name="password" placeholder="password">
+			</div>
+			<button class="modal_login">sign in</button>
+			<div class="modal_close"><span>X</span></div>
+		</div>
+	</div>
+
+
+	<section class="bookmark">
+		<div class="container">
+			<div class="bookmark_wrapper">
+				<div class="bookmark_items">
+					<div class="bookmark_items-title">
+						A Simple Bookmark <br> Manager
+					</div>
+					<p class="bookmark_items-descr">
+						A clean and simple interface to organize your favourite websites. Open a new
+						browser tab and see your sites load instantly. Try it for free.
+					</p>
+					<div class="bookmark_items-btn">
+						<button class="bookmark_items-blue">
+							Get it on Chrome
+						</button>
+						<button class="bookmark_items-white">
+							Get it on Firefox
+						</button>
+					</div>
+				</div>
+				<div class="bookmark_img">
+					<img src="images/illustration-hero.svg" alt="icon">
+				</div>
+				<span class="bookmark_item"></span>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="features">
+		<div class="container">
+			<div class="features-header">
+				<h1 class="features_title">Features</h1>
+				<p class="features_descr">
+					Our aim is to make it quick and easy for you to access your favourite websites.
+					Your bookmarks sync between your devices so you can access them on the go.
+				</p>
+			</div>
+			<div class="features_tabcontainer">
+				<div class="tabheader_items">
+					<div class="tabheader_item tabheader_item_active">Simple Bookmarking</div>
+					<div class="tabheader_item">Speedy Searching</div>
+					<div class="tabheader_item">Easy Sharing go</div>
+				</div>
+				<div class="tab-items">
+					<div class="content show">
+						<div class="tabcontent">
+							<div class="tabcontent_image">
+								<img src="images/illustration-features-tab-1.svg" alt="image">
+							</div>
+							<div class="tabcontent_heading">
+								<h1>Bookmark in one click</h1>
+								<p>
+									Organize your bookmarks however you like. Our simple drag-and-drop interface
+									gives you complete control over how you manage your favourite sites.
+								</p>
+								<button class="tabcontent_btn">More Info</button>
+							</div>
+						</div>
+					</div>
+					<div class="content hide">
+						<div class="tabcontent">
+							<div class="tabcontent_image">
+								<img src="images/illustration-features-tab-2.svg" alt="image">
+							</div>
+							<div class="tabcontent_heading">
+								<h1>Bookmark in two click</h1>
+								<p>
+									Organize your bookmarks however you like. Our simple drag-and-drop interface
+									gives you complete control over how you manage your favourite sites.
+								</p>
+								<button class="tabcontent_btn">More Info</button>
+							</div>
+						</div>
+					</div>
+					<div class="content hide">
+						<div class="tabcontent">
+							<div class="tabcontent_image">
+								<img src="images/illustration-features-tab-3.svg" alt="image">
+							</div>
+							<div class="tabcontent_heading">
+								<h1>Bookmark click</h1>
+								<p>
+									Organize your bookmarks however you like. Our simple drag-and-drop interface
+									gives you complete control over how you manage your favourite sites.
+								</p>
+								<button class="tabcontent_btn">More Info</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="download">
+		<div class="container">
+			<div class="download_heading">
+				<h1>Download the extension</h1>
+				<p> We’ve got more browsers in the pipeline. Please do let us know if you’ve
+					got a favourite you’d like us to prioritize.
+				</p>
+			</div>
+			<div class="download_container">
+				<div class="download_items">
+					<div class="download_items_img">
+						<img src="images/logo-chrome.svg" alt="icon">
+					</div>
+					<div class="download_items_descr">
+						<h3>
+							Add to Chrome
+						</h3>
+						<p>
+							Minimum version 62
+						</p>
+					</div>
+					<span class="download_items_dot"></span>
+					<button class="download_items_btn">
+						Add & Install Extension
+					</button>
+				</div>
+
+				<div class="download_items">
+					<div class="download_items_img">
+						<img src="images/logo-firefox.svg" alt="icon">
+					</div>
+					<div class="download_items_descr">
+						<h3>
+							Add to Firefox
+						</h3>
+						<p>
+							Minimum version 55
+						</p>
+					</div>
+					<span class="download_items_dot"></span>
+					<button class="download_items_btn">
+						Add & Install Extension
+					</button>
+				</div>
+
+				<div class="download_items">
+					<div class="download_items_img">
+						<img src="images/logo-opera.svg" alt="icon">
+					</div>
+					<div class="download_items_descr">
+						<h3>
+							Add to Opera
+						</h3>
+						<p>
+							Minimum version 46
+						</p>
+					</div>
+					<span class="download_items_dot"></span>
+					<button class="download_items_btn">
+						Add & Install Extension
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="questions">
+		<div class="container">
+			<div class="questions_heading">
+				<h3>Frequently Asked Questions</h3>
+				<p>
+					Here are some of our FAQs. If you have any other questions you’d like
+					answered please feel free to email us.
+				</p>
+			</div>
+			<div class="questions_container">
+				<div class="questions_items">
+					<div class="questions_items_wrapper">
+						<h4 class="questions_items_header">What is Bookmark?</h4>
+						<img class="questions_items_icon" src="images/icon-arrow.svg" alt="arrow">
+					</div>
+					<p class="questions_items_answer hide">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+						justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+					</p>
+				</div>
+
+				<div class="questions_items">
+					<div class="questions_items_wrapper">
+						<h4 class="questions_items_header">
+							How can I request a new browser?
+						</h4>
+						<img class="questions_items_icon" src="images/icon-arrow.svg" alt="arrow">
+					</div>
+					<p class="questions_items_answer hide">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+						justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+					</p>
+				</div>
+
+				<div class="questions_items">
+					<div class="questions_items_wrapper">
+						<h4 class="questions_items_header">
+							Is there a mobile app?
+						</h4>
+						<img class="questions_items_icon" src="images/icon-arrow.svg" alt="arrow">
+					</div>
+					<p class="questions_items_answer hide">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+						justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+					</p>
+				</div>
+
+				<div class="questions_items">
+					<div class="questions_items_wrapper ">
+						<h4 class="questions_items_header">
+							What about other Chromium browsers?
+						</h4>
+						<img class="questions_items_icon" src="images/icon-arrow.svg" alt="arrow">
+					</div>
+					<p class="questions_items_answer hide">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+						justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+					</p>
+				</div>
+			</div>
+			<button class="questions_btn">More Info</button>
+		</div>
+	</section>
+
+	<section class="join">
+		<div class="container">
+			<div class="join_heading">
+				<h6>35,000+ already joined</h6>
+				<h3>Stay up-to-date with what
+					<br> we’re doing</h3>
+			</div>
+			<form action="#">
+				<input type="text" name="email" placeholder="Enter your email adress">
+				<button class="join_btn">Contact Us</button>
+			</form>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer_wrapper">
+				<div class="footer_items">
+					<div class="footer_logo">
+						<img src="images/logo-bookmark.svg" alt="logo">
+					</div>
+					<nav>
+						<ul class="footer_links">
+							<li class="footer_nav_link">Features</li>
+							<li class="footer_nav_link">Pricing</li>
+							<li class="footer_nav_link">Contact</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer_icons">
+					<img src="images/icon-facebook.svg" alt="facebook">
+					<img src="images/icon-twitter.svg" alt="twitter">
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/app.js"></script>
+</body>
+
+</html>

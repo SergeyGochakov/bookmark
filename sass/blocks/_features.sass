@@ -1,0 +1,96 @@
+.features
+	padding: 50px 0
+	margin: 0 auto
+	&_title
+		+title
+	&_descr
+		margin: auto
+		margin-top: 35px
+		+descr
+		text-align: center
+		max-width: 530px
+	&_tabcontainer
+		padding-top: 80px
+.tabheader
+	&_items
+		+flexCenter
+		padding-bottom: 20px
+		margin: 0 40px 50px 0
+	&_item
+		padding: 0 50px 20px 30px
+		border-bottom: 1px solid $grayish
+		color: $grayish
+		font-weight: 500
+		cursor: pointer
+		transition: all 0.5s  
+		&:hover
+			color: #000000
+			border-bottom: 1px solid $redButton
+		&_active
+			color: #000
+.tabcontent
+	+flexCenter
+	&_image
+		width: 100%
+	&_heading
+		margin-left: 100px
+		h1
+			font-weight: 500
+		p
+			+descr
+			line-height: 25px
+	&_btn
+		margin-top: 40px
+		width: 110px
+		height: 45px
+		+buttonBlue
+		&:hover
+			+buttonHoverBlue
+	&_active
+.hide
+	display: none
+.show
+	display: block
+
+@media screen and(max-width: 991px)
+	.tabheader
+		&_items
+			margin-bottom: 0
+		&_item
+			font-size: 16px
+	.tabcontent
+		&_heading
+			margin-left: 50px
+			h1
+				font-size: 25px
+			p
+				margin-top: 0
+				font-size: 18px
+		&_btn
+			margin-top: 20px
+@media screen and ( max-width:767px	)
+	.tabheader
+		&_item
+			padding: 0px 13px 20px 13px
+	.tabcontent
+		&_heading
+			margin-left: 10px
+			h1
+				font-size: 25px
+@media screen and ( max-width:575px	)
+	.features
+		&_tabcontainer
+			padding-top: 50px
+	.tabheader
+		&_items
+			position: relative
+			flex-direction: column
+			margin-right: 0
+		&_item
+			margin: 10px 0
+			width: 100%
+			text-align: center
+	.tabcontent
+		flex-direction: column
+		&_heading
+			text-align: center
